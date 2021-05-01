@@ -142,6 +142,7 @@ var shop = function(){
     // use switch to czrry out action 
     switch (shopOptionPrompt){
         case "refill":
+        case "REFILL":
             if(playerMoney >= 7){
             window.alert("Refillinf player's health by 20 for 7 dollars.");
 
@@ -155,6 +156,7 @@ var shop = function(){
             }
             break;
         case "upgrde":
+        case "UPGRADE":
             if(playerMoney >= 7){
             window.alert("Upgrading player's attack by 6 for 7 dollars.");
 
@@ -167,6 +169,7 @@ var shop = function(){
         }
         break;
         case "leave":
+        case "LEAVE":
             window.alert("Leaving the store.");
 
             // do nothing, so function will end
